@@ -1,0 +1,10 @@
+A simple, text-baed, multiplayer, number guessing game. Built using Python, Flask and Flask-SocketIO.
+Players can join by going to `localhost:5000` and opening the console of the browser. Guesses can be sent using `socket.send(<number>)`.
+
+The game defaults to supporting 4 players. To change the number of players, change `game['max_players']` in `server.py`.
+
+To install:
+`pip install --user -r requirements.txt -e .`
+
+To run the server:
+`python server.py`
