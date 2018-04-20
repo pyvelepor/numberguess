@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src={{url_for('static', filename='socket.io.js')}}></script>
+</head>
+<body>
+    <script type="text/javascript">
+        var socket = io.connect('http://' + document.domain + ':' + location.port);
+        socket.on('message', function(data){
+            console.log(data);
+        });
+    </script>
+</body>
+</html>
